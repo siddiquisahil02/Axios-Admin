@@ -60,7 +60,7 @@ class NoticeCubit extends Cubit<NoticeState> {
 
       final notificationRes = await FCMUtils().sendTopicMsg(
           topicName: resId,
-          tile: "Notice",
+          tile: "New Notice",
           body: model.title
       );
       if(!notificationRes){

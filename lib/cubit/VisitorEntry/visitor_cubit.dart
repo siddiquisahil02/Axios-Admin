@@ -66,8 +66,8 @@ class VisitorCubit extends Cubit<VisitorState> {
         final String fcmToken = dataRef.data()!['token'];
         final fcmRes = await FCMUtils().sendMsg(
             to: fcmToken,
-            tile: "Test",
-            body: "BODY...!",
+            tile: "You have a new Visitor",
+            body: "Click here to respond to this request.",
             payLoad: "${visData.id}-$resId"
         );
         if(!fcmRes){

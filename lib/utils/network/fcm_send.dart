@@ -63,9 +63,6 @@ class FCMUtils{
                   "body":body
                 },
                 "priority": "high",
-                "data": {
-                  "action" : topicName
-                }
               }
           )
       );

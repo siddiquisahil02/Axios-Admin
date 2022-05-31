@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 const String appName = "Axios-Admin";
+const List<String> status = ["Open","On-Going","Closed","Rejected"];
 
 const Color appRed = Color(0XFFAD0318);
 const Color appRedShade2 = Color(0XFFDF0051);

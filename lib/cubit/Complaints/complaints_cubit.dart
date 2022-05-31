@@ -25,7 +25,9 @@ class ComplaintsCubit extends Cubit<ComplaintsState> {
           .get();
 
       for (var element in res.docs){
-        data.add(ComplaintsModel.fromJson(element.data()));
+        Map<String,dynamic> ele = element.data();
+        ele['id'] = element.id;
+        data.add(ComplaintsModel.fromJson(ele));
       }
 
       emit(ComplaintsInitial(data: data));

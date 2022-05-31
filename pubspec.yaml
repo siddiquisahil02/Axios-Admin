@@ -49,6 +49,7 @@ dependencies:
   http: ^0.13.4
   badges: ^2.0.2
   timeago: ^3.2.2
+  photo_view: ^0.14.0
   firebase_messaging: ^11.3.0
   flutter_local_notifications: ^9.5.2
 
